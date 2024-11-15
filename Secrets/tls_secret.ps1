@@ -8,3 +8,4 @@ $certData = (kubectl get secret <secret-name> -n <namespace> -o jsonpath='{.data
 
 $certData = (kubectl get secret <secret-name> -n <namespace> -o jsonpath='{.data.tls.crt}' | Out-String).Trim()
 [System.IO.File]::WriteAllBytes("tls.crt", [System.Convert]::FromBase64String($certData))
+
