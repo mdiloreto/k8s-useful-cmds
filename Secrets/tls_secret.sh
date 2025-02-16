@@ -1,4 +1,4 @@
-kubectl delete secret <secret-name> -n eyq-chat-persistence-dev
+kubectl delete secret <secret-name> -n <namespace-name>
 kubectl create secret tls <secret-name> --cert="path\to\cert" --key="path\to\key"
 
 # Extract the private key (tls.key) from the Kubernetes secret
