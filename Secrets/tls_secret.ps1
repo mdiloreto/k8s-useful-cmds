@@ -1,4 +1,4 @@
-kubectl delete secret <secret-name> -n eyq-chat-persistence-dev
+kubectl delete secret <secret-name> -n <namespace-name>
 kubectl create secret tls <secret-name> --cert="path\to\cert" --key="path\to\key"
 
 ## Export and decode existing tls secret values 
